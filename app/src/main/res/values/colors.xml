@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="view_divider_color_2">#DADADA</color>
+    <color name="image_background">#e2dfdf</color>
+
+    <color name="green_cpl">#036109</color>
+    <color name="yellow_p">#ffce61</color>
+    <color name="font_black">#000000</color>
+    <color name="font_white">#ffffff</color>
+
+
+</resources>

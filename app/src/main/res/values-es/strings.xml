@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="url">www.cubapaladar.org</string>
+
+    <string name="app_name">Cuba Paladar</string>
+    <string name="search_name">Buscar restaurante</string>
+    <string name="notice_me_name">Notificar mi restaurante</string>
+    <string name="update_name">Actualizar la aplicación</string>
+    <string name="info_name">Información</string>
+    <string name="file_explorer_name">Seleccione el fichero</string>
+    <string name="help_name">Ayuda</string>
+
+    <string name="action_settings">Configuración</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu">Menú</string>
+
+    <string name="dialog_close">¿Realmente desea salir?</string>
+    <string name="select_file">¿Seleccionar este fichero?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="error_data_application">¡Los datos de la aplicación no existen!</string>
+    <string name="ranking_cubapaladar">Ranking - CubaPaladar</string>
+    <string name="ranking_popularity">Ranking - Populares</string>
+    <string name="shortcuts">Atajos</string>
+    <string name="critic">Crítica</string>
+    <string name="no_critic">Lo lamentamos, pero el restaurant aún no cuenta con nuestra crítica.</string>
+    <string name="rank">Rank</string>
+    <string name="contact">Contacto</string>
+    <string name="tag_ranking_cpl">Ranking de Cuba Paladar</string>
+    <string name="tag_ranking_p">Ranking de Popularidad</string>
+    <string name="hours">Horario</string>
+    <string name="address">Dirección</string>
+    <string name="phone">Teléfono</string>
+    <string name="cell">Celular</string>
+    <string name="web">Web</string>
+    <string name="email">Correo electrónico</string>
+    <string name="select_option">Seleccione una opción</string>
+    <string name="select_province">Provincia</string>
+    <string name="select_city">Ciudad</string>
+    <string name="notice_me_restaurant">Nombre del restaurant</string>
+    <string name="notice_me_person">Persona a contactar</string>
+    <string name="notice_me_phone">Teléfono de contacto</string>
+    <string name="hint_search">Nombre, Municipio, Provincia</string>
+    <string name="last_update">Última actualización</string>
+    <string name="path_data">Datos de la aplicación</string>
+    <string name="path_map">Mapa de la aplicación</string>
+    <string name="change_path">Cambiar</string>
+    <string name="send">Enviar</string>
+    <string name="location">Ruta</string>
+
+    <string name="msg_warning">¡Atención!</string>
+    <string name="msg_loading">Cargando datos...</string>
+    <string name="msg_error">Se produjo un error</string>
+    <string name="msg_finding">Buscando...</string>
+    <string name="msg_disable_gps">El GPS está apagado, es necesario que lo encienda</string>
+    <string name="msg_notice_me">El restaurant no será registrado en nuestro sitio hasta que uno de nuestros especialistas compruebe la veracidad de los datos. Por esta razón es muy importante la ubicación del restaurant y el teléfono de contacto.</string>
+    <string name="msg_invalid_search">¡La búsqueda proporcinada no es válida!</string>
+    <string name="msg_database_exception_data">Los datos de la aplicación no se encuentran, por favor, cambie la ruta</string>
+    <string name="msg_database_exception_map">El mapa no se encuentra, por favor, cambie la ruta</string>
+    <string name="msg_updating">Actualizando Cuba Paladar</string>
+    <string name="msg_downloading">Descargando la actualización...</string>
+    <string name="msg_error_downloading">La actualización no se completó, por favor, intente nuevamente</string>
+    <string name="msg_no_connection">Su dispositivo no tiene acceso a Internet</string>
+    <string name="msg_update_successful">La actualización fue exitosa</string>
+    <string name="msg_no_shortcut_map">El restaurant no tiene posición geográfica</string>
+    <string name="msg_no_shortcut_contact">El restaurant no tiene datos de contacto</string>
+
+    <!-- Menu options -->
+    <string name="news">Noticias</string>
+    <string name="restaurants">Restaurantes</string>
+    <string name="search">Buscar</string>
+    <string name="categories">Categorías</string>
+    <string name="map">Mapa</string>
+    <string name="nearest">Cercanos</string>
+    <string name="notice_me">Notificarme</string>
+    <string name="system">Sistema</string>
+    <string name="update">Actualizar</string>
+    <string name="help">Ayuda</string>
+
+    <string-array name="menu_long_tap">
+        <item>Detalles</item>
+        <item>Ver mapa</item>
+        <item>Contacto</item>
+    </string-array>
+
+    <string-array name="stars">
+        <item>Servicio</item>
+        <item>Comida</item>
+        <item>Bebida</item>
+        <item>Ambiente</item>
+        <item>Precio/Calidad</item>
+        <item>Cantidad</item>
+    </string-array>
+
+    <!-- Hours values -->
+    <string name="rest_field_hours_mon">Lunes</string>
+    <string name="rest_field_hours_sat">Sábado</string>
+    <string name="rest_field_hours_sun">Domingo</string>
+
+    <string name="error_field_required">El campo es requerido</string>
+    <string name="choose_email_client">Seleccione un cliente de correo</string>
+
+</resources>

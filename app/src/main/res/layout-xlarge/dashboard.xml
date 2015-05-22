@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dashboard_screen" />
+
+    <LinearLayout
+        android:id="@+id/menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp">
+
+        <Button
+            android:id="@+id/btn_system"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/btn_system"
+            android:onClick="menuSystem" />
+
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/btn_info"
+            android:onClick="info" />
+
+        <Button
+            android:id="@+id/btn_news"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/btn_news"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:onClick="goWeb"
+        android:text="@string/url"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/menu_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/url"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_restaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_weight="0.99"
+            android:background="@drawable/btn_restaurants"
+            android:onClick="menuRestaurant" />
+
+        <Button
+            android:id="@+id/btn_rankcp"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_weight="0.99"
+            android:background="@drawable/btn_ranking_cp"
+            android:onClick="rankCpl" />
+
+        <Button
+            android:id="@+id/btn_rankp"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_weight="0.99"
+            android:background="@drawable/btn_ranking_p"
+            android:onClick="rankP" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ribbon" />
+
+</RelativeLayout>
+

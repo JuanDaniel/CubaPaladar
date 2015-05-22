@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="330dip"
+                                android:background="#ff000000">
+
+                                <android.support.v4.view.ViewPager
+                                    android:id="@+id/imageViewPager"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <!-- Horario -->
+                                <TextView
+                                    android:id="@+id/hours_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/hours"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <TableLayout
+                                    android:id="@+id/hours"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"></TableLayout>
+
+                                <!-- Direccion -->
+                                <TextView
+                                    android:id="@+id/address_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/address"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/goMap"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/ic_go_map"
+                                        android:onClick="goMap"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/address"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="true"
+                                        android:gravity="left"
+                                        android:onClick="goMap"
+                                        android:paddingTop="10dp"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+
+                                <!-- Telefono -->
+                                <TextView
+                                    android:id="@+id/phone_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/phone"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/callPhone"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/ic_call"
+                                        android:onClick="call"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/phone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:clickable="true"
+                                        android:onClick="call"
+                                        android:paddingTop="10dp"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+
+                                <!-- Celular -->
+                                <TextView
+                                    android:id="@+id/cell_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/cell"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/callCell"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/ic_call"
+                                        android:onClick="call"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/cell"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:clickable="true"
+                                        android:onClick="call"
+                                        android:paddingTop="10dp"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                                <!-- Web -->
+                                <TextView
+                                    android:id="@+id/web_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/web"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/goWeb"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/ic_web"
+                                        android:onClick="goWeb"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/web"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:clickable="true"
+                                        android:onClick="goWeb"
+                                        android:paddingTop="10dp"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                                <!-- Email -->
+                                <TextView
+                                    android:id="@+id/email_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/email"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/sendEmail"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/ic_email"
+                                        android:onClick="sendEmail"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/email"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:clickable="true"
+                                        android:onClick="sendEmail"
+                                        android:paddingTop="10dp"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <WebView
+                        android:id="@+id/critic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <WebView
+                        android:id="@+id/rank"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

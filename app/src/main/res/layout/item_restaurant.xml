@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/paddingRL">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/address"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image"
+        android:maxLines="2"
+        android:text="Name"
+        android:textColor="@color/green_cpl"
+        android:textSize="18sp" />
+    <!-- android:textAppearance="?android:attr/textAppearanceLarge" -->
+
+    <!-- Badge rank -->
+    <TextView
+        android:id="@+id/badge_cpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/name"
+        android:background="@drawable/badge_position_cpl"
+        android:text="#1"
+        android:textColor="@color/font_white"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/badge_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/name"
+        android:background="@drawable/badge_position_p"
+        android:text="#1"
+        android:textColor="@color/font_black"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_marginBottom="14dp"
+        android:text="Small Text"
+        android:textSize="14sp" />
+    <!-- android:textAppearance="?android:attr/textAppearanceSmall" -->
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="url">www.cubapaladar.org</string>
+
+    <string name="app_name">Cuba Paladar</string>
+    <string name="search_name">Search restaurants</string>
+    <string name="notice_me_name">Notice my restaurant</string>
+    <string name="update_name">Update application</string>
+    <string name="info_name">Information</string>
+    <string name="file_explorer_name">Select the file</string>
+    <string name="help_name">Help</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu">Menu</string>
+
+    <string name="dialog_close">Do you want exit?</string>
+    <string name="select_file">Select this file?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error_data_application">The application data is missing!</string>
+    <string name="ranking_cubapaladar">Ranking - CubaPaladar</string>
+    <string name="ranking_popularity">Ranking - Popularities</string>
+    <string name="shortcuts">Shortcuts</string>
+    <string name="critic">Critic</string>
+    <string name="no_critic">Sorry but yet the restaurant don\'t have a critic write by our critics.</string>
+    <string name="rank">Rank</string>
+    <string name="contact">Contact</string>
+    <string name="tag_ranking_cpl">In Cuba Paladar ranking</string>
+    <string name="tag_ranking_p">In popularity ranking</string>
+    <string name="hours">Schedule</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="cell">Cell</string>
+    <string name="web">Web</string>
+    <string name="email">Email</string>
+    <string name="select_option">Select an option</string>
+    <string name="select_province">State</string>
+    <string name="select_city">City</string>
+    <string name="notice_me_restaurant">Restaurant name</string>
+    <string name="notice_me_person">Person to contact</string>
+    <string name="notice_me_phone">Phone to contact</string>
+    <string name="hint_search">Name, City, Province</string>
+    <string name="last_update">Last update</string>
+    <string name="path_data">Application data</string>
+    <string name="path_map">Application map</string>
+    <string name="change_path">Change</string>
+    <string name="send">Send</string>
+    <string name="location">Location</string>
+
+    <string name="msg_warning">Atention!</string>
+    <string name="msg_loading">Loading data...</string>
+    <string name="msg_error">An error was throw</string>
+    <string name="msg_finding">Finding...</string>
+    <string name="msg_disable_gps">The GPS are turn off, please turn on</string>
+    <string name="msg_notice_me">The restaurant not will be register in our site until one of our specialists check the trust of you submited data. For that reason please is very important the location and the phone of the contact of the restaurant.</string>
+    <string name="msg_invalid_search">The query to search is not valid!</string>
+    <string name="msg_database_exception_data">The application data not found, please, change the path</string>
+    <string name="msg_database_exception_map">The map not found, please, change the path</string>
+    <string name="msg_updating">Cuba Padar updating</string>
+    <string name="msg_downloading">Downloading the update...</string>
+    <string name="msg_error_downloading">The update is incomplete, please, try again</string>
+    <string name="msg_no_connection">You device don\'t have access to Internet</string>
+    <string name="msg_update_successful">The update was successful</string>
+    <string name="msg_no_shortcut_map">The restaurant don\'t have geographic position</string>
+    <string name="msg_no_shortcut_contact">The restaurant don\'t have info to contact</string>
+
+    <!-- Menu options -->
+    <string name="news">News</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="search">Search</string>
+    <string name="categories">Categories</string>
+    <string name="map">Map</string>
+    <string name="nearest">Nearest</string>
+    <string name="notice_me">Notice me</string>
+    <string name="system">System</string>
+    <string name="update">Update</string>
+    <string name="help">Help</string>
+
+    <string-array name="menu_long_tap">
+        <item>Details</item>
+        <item>See map</item>
+        <item>Contact</item>
+    </string-array>
+
+    <string-array name="stars">
+        <item>Service</item>
+        <item>Food</item>
+        <item>Drinking</item>
+        <item>Enviroment</item>
+        <item>Price/Quality</item>
+        <item>Count</item>
+    </string-array>
+
+    <!-- Hours values -->
+    <string name="rest_field_hours_mon">Monday</string>
+    <string name="rest_field_hours_sat">Saturday</string>
+    <string name="rest_field_hours_sun">Sunday</string>
+
+    <string name="error_field_required">The field is required</string>
+    <string name="choose_email_client">Choose an Email client</string>
+
+</resources>
